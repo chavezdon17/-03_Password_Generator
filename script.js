@@ -7,8 +7,13 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
+// possible vaules
+
+var vaules =
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()+";
+
+var password = "";
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
