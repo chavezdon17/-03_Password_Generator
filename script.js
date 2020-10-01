@@ -77,9 +77,16 @@ var password_symbols = [
   "<",
 ];
 // prompt for password,
-alert("Please create a password");
+alert("Please create a password with at least 8 characters.");
+
+function checkPasswordLength() {
+  var password = document.getElementById(passwordLength).vaule;
+  if (password.length < 8);
+  alert("Password must be 8 characters long");
+}
 
 // Write password to the #password input
+
 function generatePassword() {
   complexity = prompt("How long do you want your password to be?");
 
@@ -137,13 +144,6 @@ var passwordFunctionGenerator = [
   getRandomNumber,
   getRandomsymbol,
 ];
-
-//var password = "";
-
-// loop for password
-
-// add password to display area
-//document.generatePassword("card-body").vaule = password;
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", generatePassword);
